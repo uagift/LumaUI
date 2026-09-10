@@ -1,21 +1,41 @@
 {
   "name": "lumaui",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "A lightweight, accessible, and customizable React component library.",
+  "type": "module",
+  "main": "./dist/lumaui.umd.js",
+  "module": "./dist/lumaui.js",
+  "exports": {
+    ".": {
+      "import": "./dist/lumaui.js",
+      "require": "./dist/lumaui.umd.js"
+    }
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "dependencies": {
-    "react": "^19.3.0",
-    "react-dom": "^19.3.0"
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "react",
+    "components",
+    "ui",
+    "component-library",
+    "lumaui"
+  ],
+  "author": "Amelie-Gift Umurerwa",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^6.1.1",
-    "vite": "^8.2.2"
+    "vite": "^8.2.2",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
   }
 }
