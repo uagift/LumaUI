@@ -1,0 +1,25 @@
+.lumaui-alert {
+  padding: 14px 16px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.lumaui-alert--info {
+  background: #dbeafe;
+  color: #1e3a8a;
+}
+
+.lumaui-alert--success {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.lumaui-alert--warning {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.lumaui-alert--error {
+  background: #fee2e2;
+  color: #991b1b;
+}

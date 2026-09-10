@@ -1,0 +1,28 @@
+.lumaui-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.lumaui-badge--default {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+.lumaui-badge--success {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.lumaui-badge--warning {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.lumaui-badge--error {
+  background: #fee2e2;
+  color: #991b1b;
+}
