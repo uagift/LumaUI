@@ -1,1 +1,7 @@
 dist/
+
+*storybook.log
+storybook-static
+
+# Dependencies
+node_modules/
