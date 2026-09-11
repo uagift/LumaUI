@@ -1,35 +1,59 @@
 .lumaui-input {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 8px;
+  width: 100%;
+  max-width: 400px;
 }
 
 .lumaui-input__label {
-  font-weight: 600;
   font-size: 0.95rem;
+  font-weight: 600;
+  color: #1f2937;
 }
 
 .lumaui-input__field {
   width: 100%;
   box-sizing: border-box;
   padding: 10px 12px;
-  border: 1px solid #d1d5db;
+  border: 1px solid #cbd5e1;
   border-radius: 8px;
-  font: inherit;
-  outline: none;
+  background: #ffffff;
+  color: #1f2937;
+  font-family: inherit;
+  font-size: 1rem;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.lumaui-input__field::placeholder {
+  color: #94a3b8;
 }
 
 .lumaui-input__field:focus {
+  outline: none;
   border-color: #06644b;
   box-shadow: 0 0 0 3px rgba(6, 100, 75, 0.15);
+}
+
+.lumaui-input__field:disabled {
+  cursor: not-allowed;
+  background: #f1f5f9;
+  color: #64748b;
 }
 
 .lumaui-input__field--error {
   border-color: #dc2626;
 }
 
+.lumaui-input__field--error:focus {
+  border-color: #dc2626;
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.15);
+}
+
 .lumaui-input__error {
   margin: 0;
-  color: #b91c1c;
   font-size: 0.875rem;
+  color: #dc2626;
 }
